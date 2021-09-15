@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>Frontend Mentor | Clock App</title>
+</head>
+
+<body>
+
+  <div id="body" class="body-content ">
+    <div id="header" class="header padding-container">
+      <div class="content">
+
+        <div class="quote-content">
+          <div id="quote"></div>
+          <div id="quote-author"></div>
+
+        </div>
+        <div class="refresh-button">
+          <img id="refresh-icon" src="./assets/desktop/icon-refresh.svg" alt="">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="time-indication padding-container">
+      <div class="content">
+        <div class="greeting-display">
+          <div class="greeting">
+            <img id="greeting-icon" src="./assets/desktop/icon-sun.svg" alt="">
+            <h3 class="greeting-text" id="greeting-text"><span id="day-indication">Good Morning</span><span
+                id="desktop-greeting">, it's
+                currently<span></h3>
+          </div>
+          <div class="current-time">
+            <div class="time">
+              <h2 id="time-html">01:11
+              </h2>
+            </div>
+            <div class="time-zone">
+              <h3 id="time-zone-display">
+                Loading...
+              </h3>
+            </div>
+          </div>
+          <div class="location">
+            <h3 class="location-text" id="location-text">
+
+            </h3>
+          </div>
+        </div>
+        <div class="more-button">
+          <button id="toggle" class="button">More</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="location-indicatior" class="location-indicatior padding-container hidden">
+      <div class="content">
+        <div class="location-grid">
+          <div class="grid-item">
+            <h4>
+              Current Timezone
+            </h4>
+            <div id="time-zone-html" class="location-item">
+              Loading...
+            </div>
+          </div>
+          <div class="grid-item">
+            <h4>
+              Day of the year
+            </h4>
+            <div id="day-of-year" class="location-item">
+              Loading...
+            </div>
+          </div>
+          <div class="grid-item">
+            <h4>
+              Day of the week
+            </h4>
+            <div id="day-number" class="location-item">
+              Loading...
+            </div>
+          </div>
+          <div class="grid-item">
+            <h4>
+              Week Number
+            </h4>
+            <div id="week-number" class="location-item">
+              Loading...
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
