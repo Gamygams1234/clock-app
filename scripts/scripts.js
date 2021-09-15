@@ -33,7 +33,7 @@ fetch("https://freegeoip.app/json/")
     return response.json();
   })
   .then(function(data) {
-    console.log(data);
+
     timeZone = data.time_zone;
     city = data.city;
     regionCode = data.region_code;
@@ -49,7 +49,6 @@ fetch("https://type.fit/api/quotes")
     return response.json();
   })
   .then(function(data) {
-    console.log(data);
     quotes = data;
   }).then(function() {
     getRandomQuote();
@@ -87,7 +86,6 @@ fetch("https://type.fit/api/quotes")
             toggleBtn.innerHTML= "More";
             more = true;
         }
-        console.log(more);
     });
 
   function getTime(param) {
@@ -96,7 +94,6 @@ fetch("https://type.fit/api/quotes")
             return response.json();
         })
         .then(function(data) {
-            console.log(data);
             timeZoneHTML.innerHTML = data.abbreviation
             dayOfTheWeek = data.day_of_week;
             dayOfTheYear = data.day_of_year;
